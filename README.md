@@ -7,4 +7,9 @@ The dataset I will use on this site consists of the product list and information
 
 # General Question Related with the Project
 
-1)
+1)1)What are your goals and objectives? 
+2)How is this project useful? 
+3)Will you be creating any products? 
+4)What is the biggest benefit from the project? 
+5)What are the most important areas we should always focus on? 
+6)Will it be easy and accessible to users?

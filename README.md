@@ -18,4 +18,4 @@ The dataset I will use on this site consists of the product list and information
 9) How can you see which user adds product to his/her cart?
 10) How can you see the order's status?
 11) Can you see the primary keys in database?
-12) 
+12) How to add an admin user?

@@ -5,3 +5,7 @@ SUM(product_qty) AS Total_Quantity,
 COUNT(product_id) AS Product_Count
 FROM products join brands on products.product_brand=brands.brand_id
 GROUP BY brand_id
+
+Average Speed Performance:
+
+(5.3 ms + 2.9 ms + 3.1 ms + 2.7 ms + 4.1 ms) / 5 = 3.62 ms

@@ -21,4 +21,4 @@ The dataset I will use on this site consists of the product list and information
 12) How to add an admin user?
 13) Can you list the products which, users add to their cart?
 14) How many products at specific brand and category?
-15) 
+15) Can you show how many products and quantities for each brand you have?

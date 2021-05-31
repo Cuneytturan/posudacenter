@@ -3,11 +3,6 @@ Select product_title, brand_title, cat_title, product_price, product_qty
 From products join brands on products.product_brand=brands.brand_id join categories on products.product_cat=categories.cat_id
 Order by product_price ASC
 
-364 total, Query took 0.0127 seconds.
- 0.0148 seconds.
- Query took 0.0155 seconds.
- 0.0130 seconds.
- 0.0134 seconds.
  
  Average Speed Performance:
  (12.7 ms + 14.8 ms + 15.5 ms + 13 ms + 13.4 ms) / 5 = 13.88 ms

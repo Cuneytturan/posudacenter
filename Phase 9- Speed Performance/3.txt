@@ -1,0 +1,6 @@
+SQL Query:
+Select * From user_info join cart on user_info.user_id=cart.user_id 
+Where p_id = '4'
+
+Average Speed Performance:
+(2.3 ms + 1.6 ms + 1.7 ms + 2.4 ms + 4.0 ms) / 5 = 2.4 ms

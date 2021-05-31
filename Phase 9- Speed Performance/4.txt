@@ -1,0 +1,11 @@
+SQL Query:
+
+SELECT GROUP_CONCAT(COLUMN_NAME), TABLE_NAME
+FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE
+WHERE
+  TABLE_SCHEMA = 'ecommerceapp'
+  AND CONSTRAINT_NAME='primary'
+GROUP BY TABLE_NAME;
+
+Average Speed Performance:
+(150.1 ms + 95.3 ms + 91.5 ms + 95.3 ms + 40.73 ms) / 5 = 94.586 ms

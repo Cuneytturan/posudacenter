@@ -7,9 +7,15 @@ The dataset I will use on this site consists of the product list and information
 
 # General Question Related with the Project
 
-1) What are your goals and objectives? 
-2) How is this project useful? 
-3) Will you be creating any products? 
-4) What is the biggest benefit from the project? 
-5) What are the most important areas we should always focus on? 
-6) Will it be easy and accessible to users?
+1) What is the project about?
+2) Will you be creating any products? 
+3) Can you sort product with their brands?
+4) Can you sort product with their categories
+5) What data will be published in the products?
+6) Who are the admins in the site?
+7) Can you see user's information?
+8) Which tables are connected between each other?
+9) How can you see which user adds product to his/her cart?
+10) How can you see the order's status?
+11) Can you see the primary keys in database?
+12) 

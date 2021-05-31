@@ -1,0 +1,6 @@
+SQL Query:
+Select product_title From products join brands on product_brand=brands.brand_id join categories on product_cat=categories.cat_id
+Where cat_id = '1' and brand_id= '1'
+
+Average Speed Performance:
+(4.7 ms + 6.7 ms + 5.1 ms + 8.4 ms + 5.9 ms) / 5 = 6.16 ms

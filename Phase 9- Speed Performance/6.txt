@@ -1,0 +1,9 @@
+SQL Query:
+
+  Select COUNT(*)
+  From brands join products on brands.brand_id=products.product_brand join categories on products.product_cat=categories.cat_id
+  Where brand_id= 1 and cat_id= 1
+  
+  Average Speed Performance:
+  
+  (1.98 ms + 1.37 ms + 1.63 ms + 1.42 ms + 1.36 ms) / 5 = 1.552 ms

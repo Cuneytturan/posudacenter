@@ -1,0 +1,9 @@
+SQL Query:
+
+Select first_name, last_name, email, product_title, qty, product_price
+From user_info join cart on user_info.user_id=cart.user_id join products on cart.p_id=products.product_id
+Order by id;
+
+Average Speed Performance:
+
+(5.8 ms + 3.5 ms + 3.0 ms + 3.1 ms + 6.0 ms) / 5 = 4.28 ms

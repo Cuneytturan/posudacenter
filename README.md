@@ -20,5 +20,5 @@ The dataset I will use on this site consists of the product list and information
 11) Can you see the primary keys in database?
 12) How to add an admin user?
 13) Can you list the products which, users add to their cart?
-14) How many products does this site has?
+14) How many products at specific brand and category?
 15) 

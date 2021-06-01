@@ -1,0 +1,28 @@
+Select email, product_title, qty, p_status
+From orders
+join products
+on orders.product_id=products.product_id
+join user_info
+on orders.user_id=user_info.user_id
+
+select COUNT(*)
+from orders
+JOIN(user_info JOIN products ON user_info.user_id=products.product_id)
+ON user_info.user_id=orders.user_id
+
+Test for query: 0.000514 seconds
+
+select COUNT(*)
+from user_info
+JOIN(orders JOIN products ON orders.product_id=products.product_id)
+ON orders.user_id=user_info.user_id
+
+Test for query: 0.000482 seconds
+
+
+select COUNT(*)
+from products
+JOIN(orders JOIN user_info ON orders.user_id=user_info.user_id)
+ON orders.product_id=products.product_id
+
+Test for query: 0.000398 seconds

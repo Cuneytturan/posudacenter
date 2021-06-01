@@ -1,0 +1,27 @@
+Select product_title, brand_title, cat_title
+From products 
+join brands 
+on products.product_brand=brands.brand_id 
+join categories 
+on products.product_cat=categories.cat_id
+
+select COUNT(*)
+From brands
+join (products join categories on products.product_cat=categories.cat_id)
+on products.product_brand=brands.brand_id
+
+Time for query: 0.000767 seconds
+
+select COUNT(*)
+From categories
+join (products join brands on products.product_brand=brands.brand_id)
+on products.product_cat=categories.cat_id
+
+Time for query: 0.000865 seconds
+
+select COUNT(*)
+From products
+join (categories join brands on categories.cat_id=brands.brand_id)
+on categories.cat_id=products.product_cat
+
+Time for query: 0.003703 seconds

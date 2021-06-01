@@ -1,0 +1,27 @@
+Select first_name, last_name, product_title
+From user_info
+join cart
+on user_info.user_id=cart.user_id
+join products
+on cart.p_id=products.product_id
+
+select COUNT(*)
+from user_info
+JOIN(cart JOIN products ON cart.p_id=products.product_id  )
+ON user_info.user_id=cart.user_id
+
+Test for query: 0.000361 seconds
+
+select COUNT(*)
+from cart
+JOIN(products JOIN user_info ON products.product_id=user_info.user_id  )
+ON products.product_id=cart.p_id
+
+Test for query: 0.000585 seconds
+
+select COUNT(*)
+from products
+JOIN(cart JOIN user_info ON cart.user_id=user_info.user_id  )
+ON cart.p_id=products.product_id
+
+Test for query: 0.000448 seconds

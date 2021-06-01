@@ -55,3 +55,87 @@ CREATE TABLE IF NOT EXISTS `user_info` (
   `address1` varchar(300) NOT NULL,
   `address2` varchar(11) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+
+
+-- Indexes for table `admin`
+--
+ALTER TABLE `admin`
+ ADD PRIMARY KEY (`id`), ADD UNIQUE KEY `email` (`email`);
+
+--
+-- Indexes for table `brands`
+--
+ALTER TABLE `brands`
+ ADD PRIMARY KEY (`brand_id`);
+
+--
+-- Indexes for table `cart`
+--
+ALTER TABLE `cart`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `categories`
+--
+ALTER TABLE `categories`
+ ADD PRIMARY KEY (`cat_id`);
+
+--
+-- Indexes for table `orders`
+--
+ALTER TABLE `orders`
+ ADD PRIMARY KEY (`order_id`);
+
+--
+-- Indexes for table `products`
+--
+ALTER TABLE `products`
+ ADD PRIMARY KEY (`product_id`), ADD KEY `fk_product_cat` (`product_cat`), ADD KEY `fk_product_brand` (`product_brand`);
+
+--
+-- Indexes for table `user_info`
+--
+ALTER TABLE `user_info`
+ ADD PRIMARY KEY (`user_id`);
+
+--
+-- AUTO_INCREMENT for table `admin`
+--
+ALTER TABLE `admin`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
+--
+-- AUTO_INCREMENT for table `brands`
+--
+ALTER TABLE `brands`
+MODIFY `brand_id` int(100) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
+--
+-- AUTO_INCREMENT for table `cart`
+--
+ALTER TABLE `cart`
+MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
+--
+-- AUTO_INCREMENT for table `categories`
+--
+ALTER TABLE `categories`
+MODIFY `cat_id` int(100) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
+--
+-- AUTO_INCREMENT for table `orders`
+--
+ALTER TABLE `orders`
+MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT for table `products`
+--
+ALTER TABLE `products`
+MODIFY `product_id` int(100) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=365;
+--
+-- AUTO_INCREMENT for table `user_info`
+--
+ALTER TABLE `user_info`
+MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+--
+-- Constraints for table `products`
+--
+ALTER TABLE `products`
+ADD CONSTRAINT `fk_product_brand` FOREIGN KEY (`product_brand`) REFERENCES `brands` (`brand_id`),
+ADD CONSTRAINT `fk_product_cat` FOREIGN KEY (`product_cat`) REFERENCES `categories` (`cat_id`);
